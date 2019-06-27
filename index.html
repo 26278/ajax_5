@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax 5</title>
+  </head>
+
+  <body style="background-color: grey;">
+    <p>
+      <img src="http://ma-web.nl/static/vector/Logo_blok.svg" width= 100px;> <br>
+      Ajax 5 MD 2019
+    </p>
+    <input type="text" id"searchCountry" placeholde="Zoek een land...">
+    <div id="display">Hierin komt de lijst</div>
+
+    <script type="javascript">
+      searchCountry = document.getElementById("searchCountry");
+      searchCountry.addEventListener('keyup', function(){
+        showList(searchCountry.value, 'list');
+      });
+    </script>
+
+    <script type="javascript" src="js/javascript.js"></script>
+
+  </body>
+</html>
